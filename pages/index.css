@@ -5,6 +5,7 @@
   /* if the family name is a single word, the quotes are optional */
   /* serif and sans-serif are keywords, so they shouldn't be quoted */
   font-family: "Inter", Arial, sans-serif;
+  /* font-family: "Noto serif", "Times New Roman", serif; */
   font-size: 16px;
   line-height: 20px;
 }

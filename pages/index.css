@@ -197,3 +197,104 @@
   line-height: 30px;
   color: #ffffff;
 }
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reservation__title {
+  margin: 100px auto 80px auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 100%;
+  margin: auto auto 120px;
+}
+
+.form {
+  border: 1px solid #838383;
+}
+
+.form__fieldset {
+  border: none;
+  /* Reset - see normalize.css */
+  padding: 0;
+  /* Reset - see user agent stylesheet */
+  margin-inline: 0;
+  border-width: 0;
+}
+
+.form__label {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  width: 100%;
+  /* To align with button size */
+  min-height: 60px;
+  margin: 8px auto 32px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* Reset - See user agent stylesheet */
+  margin-inline: 0;
+  border-width: 0;
+}
+
+/* .form__input */
+::placeholder {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 20px 20px;
+  border: none;
+  color: #ffffff;
+  background: #2f71e5;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  border-radius: 2px;
+}
+
+/* XXXX: Shall use a uniq identifier instead of last-child? */
+.form__label:last-child {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: flex-end;
+}

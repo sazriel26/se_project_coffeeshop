@@ -1,0 +1,82 @@
+/* .form {
+} */
+
+.form__fieldset {
+  border: none;
+  /* Reset - see normalize.css */
+  padding: 0;
+  /* Reset - see user agent stylesheet */
+  margin-inline: 0;
+  border-width: 0;
+}
+
+.form__label {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  width: 100%;
+  /* To align with button size */
+  min-height: 60px;
+  margin: 8px auto 32px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #838383;
+  /* Reset - See user agent stylesheet */
+  margin-inline: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* .form__input */
+::placeholder,
+.form__input::placeholder {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #2f71e5;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  border-radius: 2px;
+}
+
+/* XXXX: Shall use a uniq identifier instead of last-child? */
+.form__label:last-child {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: flex-end;
+}

@@ -1,0 +1,71 @@
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.about {
+  display: flex;
+  /* min-height: 800px; */
+  margin: 0;
+  background-color: #0a2850;
+  color: #fff;
+  /* Thanks to Code reviewer - inheritence of z-index */
+  z-index: 1;
+  /* As parent, needed to hide extra parts of circle - see https://stackoverflow.com/a/25194386 */
+  position: relative;
+  overflow: hidden;
+}
+
+.about__title {
+  /* See z-index @ .about, else auto */
+  z-index: inherit;
+  width: 251px;
+  margin: 100px auto auto 80px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.about__content {
+  width: 660px;
+  margin: 119px 80px 173px auto;
+  font-family: "Noto serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about__paragraph {
+  margin: 0 auto 20px auto;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about__circle {
+  width: 426px;
+  height: 426px;
+  z-index: 0;
+  /* See parent (.about) with position: relative; to allow position absolute with top+left */
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  background-color: #1878dc;
+  border-radius: 50%;
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out infinite;
+}

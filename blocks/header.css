@@ -73,15 +73,15 @@
   margin: 0 0 40px 0;
 }
 
-.header__paragraph_left {
+.header__paragraph_column_left {
   margin-left: 80px;
 }
 
-.header__paragraph_left:not(:last-child) {
+.header__paragraph_column_left:not(:last-child) {
   margin-bottom: 0;
 }
 
-.header__paragraph_right {
+.header__paragraph_column_right {
   margin-right: 80px;
   align-self: flex-end;
 }
